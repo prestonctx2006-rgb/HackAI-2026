@@ -1,0 +1,1332 @@
+[
+  {
+    "id": "AF",
+    "name": "Afghanistan",
+    "flag_colors": "black, red, green",
+    "continent": "Asia",
+    "difficulty": "hard"
+  },
+  {
+    "id": "AL",
+    "name": "Albania",
+    "flag_colors": "red, black",
+    "continent": "Europe",
+    "difficulty": "medium"
+  },
+  {
+    "id": "DZ",
+    "name": "Algeria",
+    "flag_colors": "green, white, red",
+    "continent": "Africa",
+    "difficulty": "medium"
+  },
+  {
+    "id": "AD",
+    "name": "Andorra",
+    "flag_colors": "blue, yellow, red",
+    "continent": "Europe",
+    "difficulty": "hard"
+  },
+  {
+    "id": "AO",
+    "name": "Angola",
+    "flag_colors": "red, black, yellow",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "AG",
+    "name": "Antigua and Barbuda",
+    "flag_colors": "red, black, white, yellow, blue",
+    "continent": "North America",
+    "difficulty": "hard"
+  },
+  {
+    "id": "AR",
+    "name": "Argentina",
+    "flag_colors": "light blue, white, yellow",
+    "continent": "South America",
+    "difficulty": "easy"
+  },
+  {
+    "id": "AM",
+    "name": "Armenia",
+    "flag_colors": "red, blue, orange",
+    "continent": "Asia",
+    "difficulty": "medium"
+  },
+  {
+    "id": "AU",
+    "name": "Australia",
+    "flag_colors": "blue, red, white",
+    "continent": "Oceania",
+    "difficulty": "easy"
+  },
+  {
+    "id": "AT",
+    "name": "Austria",
+    "flag_colors": "red, white",
+    "continent": "Europe",
+    "difficulty": "medium"
+  },
+  {
+    "id": "AZ",
+    "name": "Azerbaijan",
+    "flag_colors": "blue, red, green, white",
+    "continent": "Asia",
+    "difficulty": "medium"
+  },
+  {
+    "id": "BS",
+    "name": "Bahamas",
+    "flag_colors": "blue, yellow, black",
+    "continent": "North America",
+    "difficulty": "hard"
+  },
+  {
+    "id": "BH",
+    "name": "Bahrain",
+    "flag_colors": "red, white",
+    "continent": "Asia",
+    "difficulty": "hard"
+  },
+  {
+    "id": "BD",
+    "name": "Bangladesh",
+    "flag_colors": "green, red",
+    "continent": "Asia",
+    "difficulty": "medium"
+  },
+  {
+    "id": "BB",
+    "name": "Barbados",
+    "flag_colors": "blue, yellow, black",
+    "continent": "North America",
+    "difficulty": "hard"
+  },
+  {
+    "id": "BY",
+    "name": "Belarus",
+    "flag_colors": "red, green, white",
+    "continent": "Europe",
+    "difficulty": "medium"
+  },
+  {
+    "id": "BE",
+    "name": "Belgium",
+    "flag_colors": "black, yellow, red",
+    "continent": "Europe",
+    "difficulty": "medium"
+  },
+  {
+    "id": "BZ",
+    "name": "Belize",
+    "flag_colors": "blue, red, white",
+    "continent": "North America",
+    "difficulty": "hard"
+  },
+  {
+    "id": "BJ",
+    "name": "Benin",
+    "flag_colors": "green, yellow, red",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "BT",
+    "name": "Bhutan",
+    "flag_colors": "orange, yellow, white",
+    "continent": "Asia",
+    "difficulty": "hard"
+  },
+  {
+    "id": "BO",
+    "name": "Bolivia",
+    "flag_colors": "red, yellow, green",
+    "continent": "South America",
+    "difficulty": "medium"
+  },
+  {
+    "id": "BA",
+    "name": "Bosnia and Herzegovina",
+    "flag_colors": "blue, yellow, white",
+    "continent": "Europe",
+    "difficulty": "medium"
+  },
+  {
+    "id": "BW",
+    "name": "Botswana",
+    "flag_colors": "light blue, white, black",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "BR",
+    "name": "Brazil",
+    "flag_colors": "green, yellow, blue, white",
+    "continent": "South America",
+    "difficulty": "easy"
+  },
+  {
+    "id": "BN",
+    "name": "Brunei",
+    "flag_colors": "yellow, white, black",
+    "continent": "Asia",
+    "difficulty": "hard"
+  },
+  {
+    "id": "BG",
+    "name": "Bulgaria",
+    "flag_colors": "white, green, red",
+    "continent": "Europe",
+    "difficulty": "medium"
+  },
+  {
+    "id": "BF",
+    "name": "Burkina Faso",
+    "flag_colors": "red, green, yellow",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "BI",
+    "name": "Burundi",
+    "flag_colors": "red, white, green",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "CV",
+    "name": "Cape Verde",
+    "flag_colors": "blue, white, red, yellow",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "KH",
+    "name": "Cambodia",
+    "flag_colors": "blue, red, white",
+    "continent": "Asia",
+    "difficulty": "medium"
+  },
+  {
+    "id": "CM",
+    "name": "Cameroon",
+    "flag_colors": "green, red, yellow",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "CA",
+    "name": "Canada",
+    "flag_colors": "red, white",
+    "continent": "North America",
+    "difficulty": "easy"
+  },
+  {
+    "id": "CF",
+    "name": "Central African Republic",
+    "flag_colors": "blue, white, green, yellow, red",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "TD",
+    "name": "Chad",
+    "flag_colors": "blue, yellow, red",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "CL",
+    "name": "Chile",
+    "flag_colors": "red, white, blue",
+    "continent": "South America",
+    "difficulty": "medium"
+  },
+  {
+    "id": "CN",
+    "name": "China",
+    "flag_colors": "red, yellow",
+    "continent": "Asia",
+    "difficulty": "easy"
+  },
+  {
+    "id": "CO",
+    "name": "Colombia",
+    "flag_colors": "yellow, blue, red",
+    "continent": "South America",
+    "difficulty": "medium"
+  },
+  {
+    "id": "KM",
+    "name": "Comoros",
+    "flag_colors": "green, white, yellow, red, blue",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "CD",
+    "name": "Congo (DRC)",
+    "flag_colors": "blue, red, yellow",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "CG",
+    "name": "Congo (Republic)",
+    "flag_colors": "green, yellow, red",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "CR",
+    "name": "Costa Rica",
+    "flag_colors": "blue, white, red",
+    "continent": "North America",
+    "difficulty": "medium"
+  },
+  {
+    "id": "HR",
+    "name": "Croatia",
+    "flag_colors": "red, white, blue",
+    "continent": "Europe",
+    "difficulty": "medium"
+  },
+  {
+    "id": "CU",
+    "name": "Cuba",
+    "flag_colors": "blue, white, red",
+    "continent": "North America",
+    "difficulty": "medium"
+  },
+  {
+    "id": "CY",
+    "name": "Cyprus",
+    "flag_colors": "white, orange, green",
+    "continent": "Europe",
+    "difficulty": "medium"
+  },
+  {
+    "id": "CZ",
+    "name": "Czech Republic",
+    "flag_colors": "white, red, blue",
+    "continent": "Europe",
+    "difficulty": "medium"
+  },
+  {
+    "id": "DK",
+    "name": "Denmark",
+    "flag_colors": "red, white",
+    "continent": "Europe",
+    "difficulty": "medium"
+  },
+  {
+    "id": "DJ",
+    "name": "Djibouti",
+    "flag_colors": "light blue, green, white, red",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "DM",
+    "name": "Dominica",
+    "flag_colors": "green, yellow, black, white, red",
+    "continent": "North America",
+    "difficulty": "hard"
+  },
+  {
+    "id": "DO",
+    "name": "Dominican Republic",
+    "flag_colors": "blue, red, white",
+    "continent": "North America",
+    "difficulty": "medium"
+  },
+  {
+    "id": "EC",
+    "name": "Ecuador",
+    "flag_colors": "yellow, blue, red",
+    "continent": "South America",
+    "difficulty": "medium"
+  },
+  {
+    "id": "EG",
+    "name": "Egypt",
+    "flag_colors": "red, white, black, gold",
+    "continent": "Africa",
+    "difficulty": "easy"
+  },
+  {
+    "id": "SV",
+    "name": "El Salvador",
+    "flag_colors": "blue, white",
+    "continent": "North America",
+    "difficulty": "hard"
+  },
+  {
+    "id": "GQ",
+    "name": "Equatorial Guinea",
+    "flag_colors": "green, white, red, blue",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "ER",
+    "name": "Eritrea",
+    "flag_colors": "green, red, blue, yellow",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "EE",
+    "name": "Estonia",
+    "flag_colors": "blue, black, white",
+    "continent": "Europe",
+    "difficulty": "medium"
+  },
+  {
+    "id": "SZ",
+    "name": "Eswatini",
+    "flag_colors": "blue, yellow, red, black, white",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "ET",
+    "name": "Ethiopia",
+    "flag_colors": "green, yellow, red, blue",
+    "continent": "Africa",
+    "difficulty": "medium"
+  },
+  {
+    "id": "FJ",
+    "name": "Fiji",
+    "flag_colors": "light blue, white",
+    "continent": "Oceania",
+    "difficulty": "hard"
+  },
+  {
+    "id": "FI",
+    "name": "Finland",
+    "flag_colors": "white, blue",
+    "continent": "Europe",
+    "difficulty": "medium"
+  },
+  {
+    "id": "FR",
+    "name": "France",
+    "flag_colors": "blue, white, red",
+    "continent": "Europe",
+    "difficulty": "easy"
+  },
+  {
+    "id": "GA",
+    "name": "Gabon",
+    "flag_colors": "green, yellow, blue",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "GM",
+    "name": "Gambia",
+    "flag_colors": "red, blue, green, white",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "GE",
+    "name": "Georgia",
+    "flag_colors": "white, red",
+    "continent": "Asia",
+    "difficulty": "medium"
+  },
+  {
+    "id": "DE",
+    "name": "Germany",
+    "flag_colors": "black, red, gold",
+    "continent": "Europe",
+    "difficulty": "easy"
+  },
+  {
+    "id": "GH",
+    "name": "Ghana",
+    "flag_colors": "red, gold, green, black",
+    "continent": "Africa",
+    "difficulty": "medium"
+  },
+  {
+    "id": "GR",
+    "name": "Greece",
+    "flag_colors": "blue, white",
+    "continent": "Europe",
+    "difficulty": "easy"
+  },
+  {
+    "id": "GD",
+    "name": "Grenada",
+    "flag_colors": "red, yellow, green",
+    "continent": "North America",
+    "difficulty": "hard"
+  },
+  {
+    "id": "GT",
+    "name": "Guatemala",
+    "flag_colors": "blue, white",
+    "continent": "North America",
+    "difficulty": "medium"
+  },
+  {
+    "id": "GN",
+    "name": "Guinea",
+    "flag_colors": "red, yellow, green",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "GW",
+    "name": "Guinea-Bissau",
+    "flag_colors": "red, black, yellow, green",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "GY",
+    "name": "Guyana",
+    "flag_colors": "green, yellow, red, black, white",
+    "continent": "South America",
+    "difficulty": "hard"
+  },
+  {
+    "id": "HT",
+    "name": "Haiti",
+    "flag_colors": "blue, red",
+    "continent": "North America",
+    "difficulty": "hard"
+  },
+  {
+    "id": "HN",
+    "name": "Honduras",
+    "flag_colors": "blue, white",
+    "continent": "North America",
+    "difficulty": "medium"
+  },
+  {
+    "id": "HU",
+    "name": "Hungary",
+    "flag_colors": "red, white, green",
+    "continent": "Europe",
+    "difficulty": "medium"
+  },
+  {
+    "id": "IS",
+    "name": "Iceland",
+    "flag_colors": "blue, white, red",
+    "continent": "Europe",
+    "difficulty": "medium"
+  },
+  {
+    "id": "IN",
+    "name": "India",
+    "flag_colors": "orange, white, green, blue",
+    "continent": "Asia",
+    "difficulty": "easy"
+  },
+  {
+    "id": "ID",
+    "name": "Indonesia",
+    "flag_colors": "red, white",
+    "continent": "Asia",
+    "difficulty": "medium"
+  },
+  {
+    "id": "IR",
+    "name": "Iran",
+    "flag_colors": "green, white, red",
+    "continent": "Asia",
+    "difficulty": "medium"
+  },
+  {
+    "id": "IQ",
+    "name": "Iraq",
+    "flag_colors": "red, white, black, green",
+    "continent": "Asia",
+    "difficulty": "medium"
+  },
+  {
+    "id": "IE",
+    "name": "Ireland",
+    "flag_colors": "green, white, orange",
+    "continent": "Europe",
+    "difficulty": "medium"
+  },
+  {
+    "id": "IL",
+    "name": "Israel",
+    "flag_colors": "blue, white",
+    "continent": "Asia",
+    "difficulty": "medium"
+  },
+  {
+    "id": "IT",
+    "name": "Italy",
+    "flag_colors": "green, white, red",
+    "continent": "Europe",
+    "difficulty": "easy"
+  },
+  {
+    "id": "JM",
+    "name": "Jamaica",
+    "flag_colors": "black, yellow, green",
+    "continent": "North America",
+    "difficulty": "medium"
+  },
+  {
+    "id": "JP",
+    "name": "Japan",
+    "flag_colors": "white, red",
+    "continent": "Asia",
+    "difficulty": "easy"
+  },
+  {
+    "id": "JO",
+    "name": "Jordan",
+    "flag_colors": "black, white, green, red",
+    "continent": "Asia",
+    "difficulty": "medium"
+  },
+  {
+    "id": "KZ",
+    "name": "Kazakhstan",
+    "flag_colors": "light blue, yellow",
+    "continent": "Asia",
+    "difficulty": "medium"
+  },
+  {
+    "id": "KE",
+    "name": "Kenya",
+    "flag_colors": "black, red, green, white",
+    "continent": "Africa",
+    "difficulty": "medium"
+  },
+  {
+    "id": "KI",
+    "name": "Kiribati",
+    "flag_colors": "red, white, blue, yellow",
+    "continent": "Oceania",
+    "difficulty": "hard"
+  },
+  {
+    "id": "KW",
+    "name": "Kuwait",
+    "flag_colors": "green, white, red, black",
+    "continent": "Asia",
+    "difficulty": "medium"
+  },
+  {
+    "id": "KG",
+    "name": "Kyrgyzstan",
+    "flag_colors": "red, yellow",
+    "continent": "Asia",
+    "difficulty": "hard"
+  },
+  {
+    "id": "LA",
+    "name": "Laos",
+    "flag_colors": "red, blue, white",
+    "continent": "Asia",
+    "difficulty": "hard"
+  },
+  {
+    "id": "LV",
+    "name": "Latvia",
+    "flag_colors": "dark red, white",
+    "continent": "Europe",
+    "difficulty": "medium"
+  },
+  {
+    "id": "LB",
+    "name": "Lebanon",
+    "flag_colors": "red, white, green",
+    "continent": "Asia",
+    "difficulty": "medium"
+  },
+  {
+    "id": "LS",
+    "name": "Lesotho",
+    "flag_colors": "blue, white, green, black",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "LR",
+    "name": "Liberia",
+    "flag_colors": "red, white, blue",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "LY",
+    "name": "Libya",
+    "flag_colors": "red, black, green, white",
+    "continent": "Africa",
+    "difficulty": "medium"
+  },
+  {
+    "id": "LI",
+    "name": "Liechtenstein",
+    "flag_colors": "blue, red, yellow",
+    "continent": "Europe",
+    "difficulty": "hard"
+  },
+  {
+    "id": "LT",
+    "name": "Lithuania",
+    "flag_colors": "yellow, green, red",
+    "continent": "Europe",
+    "difficulty": "medium"
+  },
+  {
+    "id": "LU",
+    "name": "Luxembourg",
+    "flag_colors": "red, white, light blue",
+    "continent": "Europe",
+    "difficulty": "medium"
+  },
+  {
+    "id": "MG",
+    "name": "Madagascar",
+    "flag_colors": "white, red, green",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "MW",
+    "name": "Malawi",
+    "flag_colors": "black, red, green",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "MY",
+    "name": "Malaysia",
+    "flag_colors": "red, white, blue, yellow",
+    "continent": "Asia",
+    "difficulty": "medium"
+  },
+  {
+    "id": "MV",
+    "name": "Maldives",
+    "flag_colors": "red, green, white",
+    "continent": "Asia",
+    "difficulty": "hard"
+  },
+  {
+    "id": "ML",
+    "name": "Mali",
+    "flag_colors": "green, yellow, red",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "MT",
+    "name": "Malta",
+    "flag_colors": "white, red",
+    "continent": "Europe",
+    "difficulty": "medium"
+  },
+  {
+    "id": "MH",
+    "name": "Marshall Islands",
+    "flag_colors": "blue, white, orange",
+    "continent": "Oceania",
+    "difficulty": "hard"
+  },
+  {
+    "id": "MR",
+    "name": "Mauritania",
+    "flag_colors": "green, yellow, red",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "MU",
+    "name": "Mauritius",
+    "flag_colors": "red, blue, yellow, green",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "MX",
+    "name": "Mexico",
+    "flag_colors": "green, white, red",
+    "continent": "North America",
+    "difficulty": "easy"
+  },
+  {
+    "id": "FM",
+    "name": "Micronesia",
+    "flag_colors": "light blue, white",
+    "continent": "Oceania",
+    "difficulty": "hard"
+  },
+  {
+    "id": "MD",
+    "name": "Moldova",
+    "flag_colors": "blue, yellow, red",
+    "continent": "Europe",
+    "difficulty": "medium"
+  },
+  {
+    "id": "MC",
+    "name": "Monaco",
+    "flag_colors": "red, white",
+    "continent": "Europe",
+    "difficulty": "hard"
+  },
+  {
+    "id": "MN",
+    "name": "Mongolia",
+    "flag_colors": "red, blue, yellow",
+    "continent": "Asia",
+    "difficulty": "medium"
+  },
+  {
+    "id": "ME",
+    "name": "Montenegro",
+    "flag_colors": "red, gold",
+    "continent": "Europe",
+    "difficulty": "medium"
+  },
+  {
+    "id": "MA",
+    "name": "Morocco",
+    "flag_colors": "red, green",
+    "continent": "Africa",
+    "difficulty": "medium"
+  },
+  {
+    "id": "MZ",
+    "name": "Mozambique",
+    "flag_colors": "green, black, yellow, white, red",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "MM",
+    "name": "Myanmar",
+    "flag_colors": "yellow, green, red, white",
+    "continent": "Asia",
+    "difficulty": "medium"
+  },
+  {
+    "id": "NA",
+    "name": "Namibia",
+    "flag_colors": "blue, red, green, white, yellow",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "NR",
+    "name": "Nauru",
+    "flag_colors": "blue, yellow, white",
+    "continent": "Oceania",
+    "difficulty": "hard"
+  },
+  {
+    "id": "NP",
+    "name": "Nepal",
+    "flag_colors": "red, blue, white",
+    "continent": "Asia",
+    "difficulty": "medium"
+  },
+  {
+    "id": "NL",
+    "name": "Netherlands",
+    "flag_colors": "red, white, blue",
+    "continent": "Europe",
+    "difficulty": "easy"
+  },
+  {
+    "id": "NZ",
+    "name": "New Zealand",
+    "flag_colors": "blue, red, white",
+    "continent": "Oceania",
+    "difficulty": "easy"
+  },
+  {
+    "id": "NI",
+    "name": "Nicaragua",
+    "flag_colors": "blue, white",
+    "continent": "North America",
+    "difficulty": "medium"
+  },
+  {
+    "id": "NE",
+    "name": "Niger",
+    "flag_colors": "orange, white, green",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "NG",
+    "name": "Nigeria",
+    "flag_colors": "green, white",
+    "continent": "Africa",
+    "difficulty": "medium"
+  },
+  {
+    "id": "NO",
+    "name": "Norway",
+    "flag_colors": "red, white, blue",
+    "continent": "Europe",
+    "difficulty": "medium"
+  },
+  {
+    "id": "OM",
+    "name": "Oman",
+    "flag_colors": "red, white, green",
+    "continent": "Asia",
+    "difficulty": "medium"
+  },
+  {
+    "id": "PK",
+    "name": "Pakistan",
+    "flag_colors": "green, white",
+    "continent": "Asia",
+    "difficulty": "medium"
+  },
+  {
+    "id": "PW",
+    "name": "Palau",
+    "flag_colors": "light blue, yellow",
+    "continent": "Oceania",
+    "difficulty": "hard"
+  },
+  {
+    "id": "PA",
+    "name": "Panama",
+    "flag_colors": "red, blue, white",
+    "continent": "North America",
+    "difficulty": "medium"
+  },
+  {
+    "id": "PG",
+    "name": "Papua New Guinea",
+    "flag_colors": "black, red, yellow",
+    "continent": "Oceania",
+    "difficulty": "hard"
+  },
+  {
+    "id": "PY",
+    "name": "Paraguay",
+    "flag_colors": "red, white, blue",
+    "continent": "South America",
+    "difficulty": "medium"
+  },
+  {
+    "id": "PE",
+    "name": "Peru",
+    "flag_colors": "red, white",
+    "continent": "South America",
+    "difficulty": "medium"
+  },
+  {
+    "id": "PH",
+    "name": "Philippines",
+    "flag_colors": "blue, red, white, yellow",
+    "continent": "Asia",
+    "difficulty": "medium"
+  },
+  {
+    "id": "PL",
+    "name": "Poland",
+    "flag_colors": "white, red",
+    "continent": "Europe",
+    "difficulty": "medium"
+  },
+  {
+    "id": "PT",
+    "name": "Portugal",
+    "flag_colors": "green, red, yellow",
+    "continent": "Europe",
+    "difficulty": "medium"
+  },
+  {
+    "id": "QA",
+    "name": "Qatar",
+    "flag_colors": "maroon, white",
+    "continent": "Asia",
+    "difficulty": "medium"
+  },
+  {
+    "id": "RO",
+    "name": "Romania",
+    "flag_colors": "blue, yellow, red",
+    "continent": "Europe",
+    "difficulty": "medium"
+  },
+  {
+    "id": "RU",
+    "name": "Russia",
+    "flag_colors": "white, blue, red",
+    "continent": "Europe",
+    "difficulty": "easy"
+  },
+  {
+    "id": "RW",
+    "name": "Rwanda",
+    "flag_colors": "blue, yellow, green",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "KN",
+    "name": "Saint Kitts and Nevis",
+    "flag_colors": "green, black, red, yellow, white",
+    "continent": "North America",
+    "difficulty": "hard"
+  },
+  {
+    "id": "LC",
+    "name": "Saint Lucia",
+    "flag_colors": "blue, white, black, yellow",
+    "continent": "North America",
+    "difficulty": "hard"
+  },
+  {
+    "id": "VC",
+    "name": "Saint Vincent and the Grenadines",
+    "flag_colors": "blue, yellow, green",
+    "continent": "North America",
+    "difficulty": "hard"
+  },
+  {
+    "id": "WS",
+    "name": "Samoa",
+    "flag_colors": "red, blue, white",
+    "continent": "Oceania",
+    "difficulty": "hard"
+  },
+  {
+    "id": "SM",
+    "name": "San Marino",
+    "flag_colors": "white, light blue",
+    "continent": "Europe",
+    "difficulty": "hard"
+  },
+  {
+    "id": "ST",
+    "name": "Sao Tome and Principe",
+    "flag_colors": "green, yellow, red, black",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "SA",
+    "name": "Saudi Arabia",
+    "flag_colors": "green, white",
+    "continent": "Asia",
+    "difficulty": "medium"
+  },
+  {
+    "id": "SN",
+    "name": "Senegal",
+    "flag_colors": "green, yellow, red",
+    "continent": "Africa",
+    "difficulty": "medium"
+  },
+  {
+    "id": "RS",
+    "name": "Serbia",
+    "flag_colors": "red, blue, white",
+    "continent": "Europe",
+    "difficulty": "medium"
+  },
+  {
+    "id": "SC",
+    "name": "Seychelles",
+    "flag_colors": "blue, yellow, red, white, green",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "SL",
+    "name": "Sierra Leone",
+    "flag_colors": "green, white, blue",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "SG",
+    "name": "Singapore",
+    "flag_colors": "red, white",
+    "continent": "Asia",
+    "difficulty": "medium"
+  },
+  {
+    "id": "SK",
+    "name": "Slovakia",
+    "flag_colors": "white, blue, red",
+    "continent": "Europe",
+    "difficulty": "medium"
+  },
+  {
+    "id": "SI",
+    "name": "Slovenia",
+    "flag_colors": "blue, white, red",
+    "continent": "Europe",
+    "difficulty": "medium"
+  },
+  {
+    "id": "SB",
+    "name": "Solomon Islands",
+    "flag_colors": "blue, green, yellow, white",
+    "continent": "Oceania",
+    "difficulty": "hard"
+  },
+  {
+    "id": "SO",
+    "name": "Somalia",
+    "flag_colors": "light blue, white",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "ZA",
+    "name": "South Africa",
+    "flag_colors": "green, black, yellow, red, white, blue",
+    "continent": "Africa",
+    "difficulty": "medium"
+  },
+  {
+    "id": "SS",
+    "name": "South Sudan",
+    "flag_colors": "black, red, green, blue, yellow, white",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "ES",
+    "name": "Spain",
+    "flag_colors": "red, yellow",
+    "continent": "Europe",
+    "difficulty": "easy"
+  },
+  {
+    "id": "LK",
+    "name": "Sri Lanka",
+    "flag_colors": "dark red, orange, green, yellow",
+    "continent": "Asia",
+    "difficulty": "medium"
+  },
+  {
+    "id": "SD",
+    "name": "Sudan",
+    "flag_colors": "red, white, black, green",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "SR",
+    "name": "Suriname",
+    "flag_colors": "green, white, red, yellow",
+    "continent": "South America",
+    "difficulty": "hard"
+  },
+  {
+    "id": "SE",
+    "name": "Sweden",
+    "flag_colors": "blue, yellow",
+    "continent": "Europe",
+    "difficulty": "medium"
+  },
+  {
+    "id": "CH",
+    "name": "Switzerland",
+    "flag_colors": "red, white",
+    "continent": "Europe",
+    "difficulty": "medium"
+  },
+  {
+    "id": "SY",
+    "name": "Syria",
+    "flag_colors": "red, white, black, green",
+    "continent": "Asia",
+    "difficulty": "medium"
+  },
+  {
+    "id": "TW",
+    "name": "Taiwan",
+    "flag_colors": "red, blue, white",
+    "continent": "Asia",
+    "difficulty": "medium"
+  },
+  {
+    "id": "TJ",
+    "name": "Tajikistan",
+    "flag_colors": "red, white, green, yellow",
+    "continent": "Asia",
+    "difficulty": "hard"
+  },
+  {
+    "id": "TZ",
+    "name": "Tanzania",
+    "flag_colors": "green, black, blue, yellow",
+    "continent": "Africa",
+    "difficulty": "medium"
+  },
+  {
+    "id": "TH",
+    "name": "Thailand",
+    "flag_colors": "red, white, blue",
+    "continent": "Asia",
+    "difficulty": "medium"
+  },
+  {
+    "id": "TL",
+    "name": "Timor-Leste",
+    "flag_colors": "red, black, yellow, white",
+    "continent": "Asia",
+    "difficulty": "hard"
+  },
+  {
+    "id": "TG",
+    "name": "Togo",
+    "flag_colors": "green, yellow, red, white",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "TO",
+    "name": "Tonga",
+    "flag_colors": "red, white",
+    "continent": "Oceania",
+    "difficulty": "hard"
+  },
+  {
+    "id": "TT",
+    "name": "Trinidad and Tobago",
+    "flag_colors": "red, black, white",
+    "continent": "North America",
+    "difficulty": "medium"
+  },
+  {
+    "id": "TN",
+    "name": "Tunisia",
+    "flag_colors": "red, white",
+    "continent": "Africa",
+    "difficulty": "medium"
+  },
+  {
+    "id": "TR",
+    "name": "Turkey",
+    "flag_colors": "red, white",
+    "continent": "Asia",
+    "difficulty": "medium"
+  },
+  {
+    "id": "TM",
+    "name": "Turkmenistan",
+    "flag_colors": "green, white, red",
+    "continent": "Asia",
+    "difficulty": "hard"
+  },
+  {
+    "id": "TV",
+    "name": "Tuvalu",
+    "flag_colors": "light blue, yellow, white",
+    "continent": "Oceania",
+    "difficulty": "hard"
+  },
+  {
+    "id": "UG",
+    "name": "Uganda",
+    "flag_colors": "black, yellow, red, white",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "UA",
+    "name": "Ukraine",
+    "flag_colors": "blue, yellow",
+    "continent": "Europe",
+    "difficulty": "medium"
+  },
+  {
+    "id": "AE",
+    "name": "United Arab Emirates",
+    "flag_colors": "green, white, black, red",
+    "continent": "Asia",
+    "difficulty": "medium"
+  },
+  {
+    "id": "GB",
+    "name": "United Kingdom",
+    "flag_colors": "blue, red, white",
+    "continent": "Europe",
+    "difficulty": "easy"
+  },
+  {
+    "id": "US",
+    "name": "United States",
+    "flag_colors": "red, white, blue",
+    "continent": "North America",
+    "difficulty": "easy"
+  },
+  {
+    "id": "UY",
+    "name": "Uruguay",
+    "flag_colors": "white, blue, yellow",
+    "continent": "South America",
+    "difficulty": "medium"
+  },
+  {
+    "id": "UZ",
+    "name": "Uzbekistan",
+    "flag_colors": "blue, white, green",
+    "continent": "Asia",
+    "difficulty": "hard"
+  },
+  {
+    "id": "VU",
+    "name": "Vanuatu",
+    "flag_colors": "red, green, black, yellow",
+    "continent": "Oceania",
+    "difficulty": "hard"
+  },
+  {
+    "id": "VE",
+    "name": "Venezuela",
+    "flag_colors": "yellow, blue, red",
+    "continent": "South America",
+    "difficulty": "medium"
+  },
+  {
+    "id": "VN",
+    "name": "Vietnam",
+    "flag_colors": "red, yellow",
+    "continent": "Asia",
+    "difficulty": "medium"
+  },
+  {
+    "id": "YE",
+    "name": "Yemen",
+    "flag_colors": "red, white, black",
+    "continent": "Asia",
+    "difficulty": "medium"
+  },
+  {
+    "id": "ZM",
+    "name": "Zambia",
+    "flag_colors": "green, red, black, orange",
+    "continent": "Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": "ZW",
+    "name": "Zimbabwe",
+    "flag_colors": "green, yellow, red, black, white",
+    "continent": "Africa",
+    "difficulty": "hard"
+  }
+]
