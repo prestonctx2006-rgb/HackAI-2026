@@ -5,6 +5,7 @@ import {
   Text,
   TextInput,
   TouchableOpacity,
+  Button,
   ImageBackground,
   StatusBar,
   Modal,
@@ -13,6 +14,7 @@ import {
   Platform,
   Alert,
 } from 'react-native';
+import { router } from 'expo-router';
 
 type ModalType = 'login' | 'signup' | null;
 
@@ -39,6 +41,7 @@ export default function HomeScreen() {
     // TODO: call backend login API here
     setLoading(false);
     closeModal();
+    //router.replace('/Dashboard');
   };
 
   const handleSignup = async () => {
@@ -196,6 +199,10 @@ export default function HomeScreen() {
         </KeyboardAvoidingView>
       </Modal>
 
+      <View style={styles.navButton}>
+        <Button title="Go to Fact Room" onPress={() => router.push('/Factroom')} />
+      </View>
+
     </ImageBackground>
   );
 }
@@ -325,5 +332,8 @@ const styles = StyleSheet.create({
     color: '#9CA3AF',
     fontSize: 14,
     fontWeight: '500',
+  },
+  navButton: {
+    padding: 20,
   },
 });

@@ -21,7 +21,7 @@ export default function ColorsRoom() {
 
   return (
     <ImageBackground
-      source={require('@/assets/images/RoomBackground1.jpeg')}
+      source={require('@/assets/images/UpdatedRoomBackground.png')}
       style={styles.background}
       resizeMode="cover"
     >
@@ -32,7 +32,7 @@ export default function ColorsRoom() {
 
         {/* Role badge */}
         <View style={styles.roleBadge}>
-          <Text style={styles.roleBadgeText}>🎨 COLORS PLAYER</Text>
+          <Text style={styles.roleBadgeText}>FLAG COLORS</Text>
         </View>
 
         {/* Instructions */}
@@ -51,14 +51,6 @@ export default function ColorsRoom() {
               </View>
             ))}
           </View>
-        </View>
-
-        {/* Hint text */}
-        <View style={styles.hintCard}>
-          <Text style={styles.hintLabel}>💡 HINT</Text>
-          <Text style={styles.hintText}>
-            Use the colors to hint at the country&apos;s flag without saying its name directly!
-          </Text>
         </View>
 
         {/* Map button — only shown if this player has the map */}
