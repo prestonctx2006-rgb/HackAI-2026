@@ -1,2 +1,6 @@
-.env
-venv/
+backend/serviceAccountKey.json
+node_modules/
+.expo/
+dist/
+web-build/
+.DS_Store
