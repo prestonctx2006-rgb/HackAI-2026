@@ -21,7 +21,7 @@ export default function FactRoom() {
 
   return (
     <ImageBackground
-      source={require('@/assets/images/RoomBackground1.jpeg')}
+      source={require('@/assets/images/UpdatedRoomBackground.png')}
       style={styles.background}
       resizeMode="cover"
     >
@@ -32,7 +32,7 @@ export default function FactRoom() {
 
         {/* Role badge */}
         <View style={styles.roleBadge}>
-          <Text style={styles.roleBadgeText}>📋 FACT PLAYER</Text>
+          <Text style={styles.roleBadgeText}>FACT PLAYER</Text>
         </View>
 
         {/* Instructions */}
@@ -53,7 +53,7 @@ export default function FactRoom() {
             onPress={() => setMapVisible(true)}
             activeOpacity={0.85}
           >
-            <Text style={styles.mapBtnText}>🗺️ Open Map</Text>
+            <Text style={styles.mapBtnText}>Open Map</Text>
             {pinPlaced && <Text style={styles.mapBtnSub}>Pin placed ✓</Text>}
           </TouchableOpacity>
         )}
@@ -111,16 +111,16 @@ const styles = StyleSheet.create({
   },
 
   roleBadge: {
-    backgroundColor: 'rgba(255,200,50,0.2)',
+    backgroundColor: 'rgba(143,94,66,0.22)',
     borderWidth: 1.5,
-    borderColor: '#FFC832',
+    borderColor: '#8f5e42',
     borderRadius: 50,
     paddingVertical: 6,
     paddingHorizontal: 18,
     marginBottom: 20,
   },
   roleBadgeText: {
-    color: '#FFC832',
+    color: 'rgb(235, 222, 203)',
     fontWeight: '800',
     fontSize: 12,
     letterSpacing: 2,
@@ -144,7 +144,7 @@ const styles = StyleSheet.create({
     marginBottom: 28,
   },
   factLabel: {
-    color: '#FFC832',
+    color: '#8f5e42',
     fontSize: 11,
     fontWeight: '800',
     letterSpacing: 2,
@@ -158,19 +158,14 @@ const styles = StyleSheet.create({
   },
 
   mapBtn: {
-    backgroundColor: '#FFC832',
+    backgroundColor: '#8f5e42',
     borderRadius: 16,
     paddingVertical: 16,
     paddingHorizontal: 40,
     alignItems: 'center',
-    shadowColor: '#FFC832',
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.4,
-    shadowRadius: 12,
-    elevation: 6,
   },
   mapBtnText: {
-    color: '#1A1A2E',
+    color: 'rgb(235, 222, 203)',
     fontWeight: '800',
     fontSize: 16,
   },
