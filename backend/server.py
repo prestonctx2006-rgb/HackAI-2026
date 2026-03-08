@@ -11,6 +11,7 @@ import httpx
 import firebase_admin
 from firebase_admin import credentials, firestore, db as realtime_db
 from groq import Groq
+from audio import generate_language_hint
 
 # Load .env FIRST before anything else
 load_dotenv()
@@ -217,3 +218,14 @@ async def create_game():
         realtime_db.reference(f"/games/{code}").set(game_data)
 
         return {"game_code": code}
+
+@app.get("/hint-audio/{game_code}")
+async def get_hint_audio(game_code: str):
+    game_ref = realtime_db.reference(f"/games/{game_code}")
+    game = game_ref.get()
+    
+    if not game:
+        return {"error": "Game not found"}
+    
+    result = await generate_language_hint(game["country"])
+    return result
