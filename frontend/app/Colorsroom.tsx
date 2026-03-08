@@ -21,7 +21,7 @@ export default function ColorsRoom() {
 
   return (
     <ImageBackground
-      source={require('@/assets/images/RoomBackground1.jpeg')}
+      source={require('@/assets/images/UpdatedRoomBackground.png')}
       style={styles.background}
       resizeMode="cover"
     >
