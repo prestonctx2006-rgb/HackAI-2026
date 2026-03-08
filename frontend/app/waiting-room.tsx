@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
+import { BASE_URL } from '@/constants/api';
 import {
   StyleSheet,
   View,
@@ -19,7 +20,7 @@ export default function WaitingRoom() {
   useEffect(() => {
     const poll = async () => {
       try {
-        const res = await fetch(`http://localhost:8000/room-status/${code}`);
+        const res = await fetch(`${BASE_URL}/room-status/${code}`);
         if (!res.ok) return;
         const data = await res.json();
         setPlayerCount(data.playerCount ?? 1);
@@ -45,7 +46,7 @@ export default function WaitingRoom() {
 
   const handleLeave = async () => {
     try {
-      await fetch(`http://localhost:8000/leave-room/${code}`, {
+      await fetch(`${BASE_URL}/leave-room/${code}`, {
         method: 'POST',
       });
     } catch (e) {
@@ -147,7 +148,7 @@ const styles = StyleSheet.create({
     marginBottom: 12,
   },
   codeText: {
-    fontSize: 48,
+    fontSize: 36,
     fontWeight: '900',
     color: '#FFFFFF',
     letterSpacing: 8,

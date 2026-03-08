@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { BASE_URL } from '@/constants/api';
 import {
   StyleSheet,
   View,
@@ -24,7 +25,7 @@ export default function PlayScreen() {
   const handleCreateRoom = async () => {
     setLoading(true);
     try {
-      const res = await fetch('http://localhost:8000/create-room', {
+      const res = await fetch(`${BASE_URL}/create-room`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
       });
@@ -48,7 +49,7 @@ export default function PlayScreen() {
     }
     setLoading(true);
     try {
-      const res = await fetch(`http://localhost:8000/join-room/${roomCode.toUpperCase()}`, {
+      const res = await fetch(`${BASE_URL}/join-room/${roomCode.toUpperCase()}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
       });

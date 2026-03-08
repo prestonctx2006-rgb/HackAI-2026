@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { BASE_URL } from '@/constants/api';
 import {
   StyleSheet,
   View,
@@ -37,7 +38,7 @@ export default function LandingScreen() {
     }
     setLoading(true);
     try {
-      const res = await fetch('http://localhost:8000/auth/login', {
+      const res = await fetch(`${BASE_URL}/auth/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password }),
@@ -63,7 +64,7 @@ export default function LandingScreen() {
     }
     setLoading(true);
     try {
-      const res = await fetch('http://localhost:8000/auth/signup', {
+      const res = await fetch(`${BASE_URL}/auth/signup`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password }),
