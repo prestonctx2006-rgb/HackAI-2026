@@ -14,45 +14,73 @@ import {
   Platform,
   Alert,
 } from 'react-native';
-import { router } from 'expo-router';
+import { useRouter } from 'expo-router';
 
 type ModalType = 'login' | 'signup' | null;
 
-export default function HomeScreen() {
+export default function LandingScreen() {
+  const router = useRouter();
   const [activeModal, setActiveModal] = useState<ModalType>(null);
-  const [email, setEmail] = useState('');
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
 
   const closeModal = () => {
     setActiveModal(null);
-    setEmail('');
     setUsername('');
     setPassword('');
   };
 
   const handleLogin = async () => {
-    if (!email || !password) {
+    if (!username || !password) {
       Alert.alert('Oops!', 'Please fill in all fields.');
       return;
     }
     setLoading(true);
-    // TODO: call backend login API here
-    setLoading(false);
-    closeModal();
-    //router.replace('/Dashboard');
+    try {
+      const res = await fetch('http://localhost:8000/auth/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username, password }),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        Alert.alert('Error', data.detail);
+        return;
+      }
+      closeModal();
+      router.replace('/(tabs)/play');
+    } catch (e) {
+      Alert.alert('Error', 'Could not connect to server.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleSignup = async () => {
-    if (!email || !password || !username) {
+    if (!username || !password) {
       Alert.alert('Oops!', 'Please fill in all fields.');
       return;
     }
     setLoading(true);
-    // TODO: call backend signup API here
-    setLoading(false);
-    closeModal();
+    try {
+      const res = await fetch('http://localhost:8000/auth/signup', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username, password }),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        Alert.alert('Error', data.detail);
+        return;
+      }
+      closeModal();
+      router.replace('/(tabs)/play');
+    } catch (e) {
+      Alert.alert('Error', 'Could not connect to server.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -73,7 +101,6 @@ export default function HomeScreen() {
         >
           <Text style={styles.outlineBtnText}>Log In</Text>
         </TouchableOpacity>
-
         <TouchableOpacity
           style={styles.solidBtn}
           onPress={() => setActiveModal('signup')}
@@ -86,7 +113,7 @@ export default function HomeScreen() {
       {/* Center branding */}
       <View style={styles.centerContent}>
         <Text style={styles.title}>Truth or Terrain</Text>
-        <Text style={styles.subtitle}>Is it the Truth........or is it the Terrain?</Text>
+        <Text style={styles.subtitle}>Going beyond the surface</Text>
       </View>
 
       {/* ── LOG IN MODAL ── */}
@@ -98,15 +125,16 @@ export default function HomeScreen() {
           <View style={styles.modalCard}>
             <Text style={styles.modalTitle}>Welcome back 👋</Text>
 
-            <Text style={styles.inputLabel}>Email</Text>
+            <Text style={styles.inputLabel}>Username</Text>
             <TextInput
               style={styles.input}
-              placeholder="you@example.com"
+              placeholder="your username"
               placeholderTextColor="#9CA3AF"
-              value={email}
-              onChangeText={setEmail}
-              keyboardType="email-address"
+              value={username}
+              onChangeText={setUsername}
               autoCapitalize="none"
+              autoCorrect={false}
+              keyboardType="default"
             />
 
             <Text style={styles.inputLabel}>Password</Text>
@@ -117,6 +145,8 @@ export default function HomeScreen() {
               value={password}
               onChangeText={setPassword}
               secureTextEntry
+              autoCapitalize="none"
+              autoCorrect={false}
             />
 
             <TouchableOpacity
@@ -156,17 +186,8 @@ export default function HomeScreen() {
               value={username}
               onChangeText={setUsername}
               autoCapitalize="none"
-            />
-
-            <Text style={styles.inputLabel}>Email</Text>
-            <TextInput
-              style={styles.input}
-              placeholder="you@example.com"
-              placeholderTextColor="#9CA3AF"
-              value={email}
-              onChangeText={setEmail}
-              keyboardType="email-address"
-              autoCapitalize="none"
+              autoCorrect={false}
+              keyboardType="default"
             />
 
             <Text style={styles.inputLabel}>Password</Text>
@@ -177,6 +198,8 @@ export default function HomeScreen() {
               value={password}
               onChangeText={setPassword}
               secureTextEntry
+              autoCapitalize="none"
+              autoCorrect={false}
             />
 
             <TouchableOpacity
@@ -204,17 +227,11 @@ export default function HomeScreen() {
 }
 
 const styles = StyleSheet.create({
-  background: {
-    flex: 1,
-    width: '100%',
-    height: '100%',
-  },
+  background: { flex: 1, width: '100%', height: '100%' },
   overlay: {
     ...StyleSheet.absoluteFillObject,
-    backgroundColor: 'rgba(0, 0, 0, 0.35)',
+    backgroundColor: 'rgba(0,0,0,0.35)',
   },
-
-  // Top bar
   topBar: {
     position: 'absolute',
     top: 60,
@@ -229,34 +246,26 @@ const styles = StyleSheet.create({
     paddingVertical: 8,
     paddingHorizontal: 20,
   },
-  outlineBtnText: {
-    color: '#FFFFFF',
-    fontWeight: '700',
-    fontSize: 14,
-  },
+  outlineBtnText: { color: '#FFFFFF', fontWeight: '700', fontSize: 14 },
   solidBtn: {
     backgroundColor: '#FFFFFF',
     borderRadius: 50,
     paddingVertical: 8,
     paddingHorizontal: 20,
   },
-  solidBtnText: {
-    color: '#1A1A2E',
-    fontWeight: '700',
-    fontSize: 14,
-  },
-
-  // Center branding
+  solidBtnText: { color: '#1A1A2E', fontWeight: '700', fontSize: 14 },
   centerContent: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    paddingHorizontal: 32,
   },
   title: {
     fontSize: 52,
     fontWeight: '900',
     color: '#FFFFFF',
     letterSpacing: -1,
+    textAlign: 'center',
     textShadowColor: 'rgba(0,0,0,0.4)',
     textShadowOffset: { width: 0, height: 2 },
     textShadowRadius: 8,
@@ -264,16 +273,15 @@ const styles = StyleSheet.create({
   subtitle: {
     fontSize: 14,
     color: 'rgba(255,255,255,0.75)',
-    letterSpacing: 3,
+    letterSpacing: 2,
     textTransform: 'uppercase',
     marginTop: 10,
+    textAlign: 'center',
     textShadowColor: 'rgba(0,0,0,0.3)',
     textShadowOffset: { width: 0, height: 1 },
     textShadowRadius: 4,
     textAlign: 'center'
   },
-
-  // Modal
   modalBackdrop: {
     flex: 1,
     justifyContent: 'flex-end',
@@ -284,7 +292,7 @@ const styles = StyleSheet.create({
     borderTopLeftRadius: 28,
     borderTopRightRadius: 28,
     padding: 28,
-    paddingBottom: 40,
+    paddingBottom: 44,
   },
   modalTitle: {
     fontSize: 24,
@@ -319,11 +327,7 @@ const styles = StyleSheet.create({
     marginTop: 4,
     marginBottom: 14,
   },
-  submitText: {
-    color: '#FFFFFF',
-    fontWeight: '800',
-    fontSize: 16,
-  },
+  submitText: { color: '#FFFFFF', fontWeight: '800', fontSize: 16 },
   cancelText: {
     textAlign: 'center',
     color: '#9CA3AF',
