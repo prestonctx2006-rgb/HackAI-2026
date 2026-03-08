@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { router } from 'expo-router';
 import {
   StyleSheet,
   View,
@@ -39,6 +40,7 @@ export default function HomeScreen() {
     // TODO: call backend login API here
     setLoading(false);
     closeModal();
+    //router.replace('/Dashboard');
   };
 
   const handleSignup = async () => {
