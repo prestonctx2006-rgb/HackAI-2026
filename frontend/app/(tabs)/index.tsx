@@ -199,10 +199,6 @@ export default function HomeScreen() {
         </KeyboardAvoidingView>
       </Modal>
 
-      <View style={styles.navButton}>
-        <Button title="Go to Fact Room" onPress={() => router.push('/Factroom')} />
-      </View>
-
     </ImageBackground>
   );
 }
@@ -274,6 +270,7 @@ const styles = StyleSheet.create({
     textShadowColor: 'rgba(0,0,0,0.3)',
     textShadowOffset: { width: 0, height: 1 },
     textShadowRadius: 4,
+    textAlign: 'center'
   },
 
   // Modal
