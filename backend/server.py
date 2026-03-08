@@ -1,3 +1,4 @@
+from routes.auth import router as auth_router
 from random import choice
 import random
 import string
@@ -35,6 +36,9 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+#Auth
+app.include_router(auth_router)
 
 @app.get("/")
 def home():
