@@ -82,8 +82,8 @@ export default function HomeScreen() {
 
       {/* Center branding */}
       <View style={styles.centerContent}>
-        <Text style={styles.title}>GeoBlind</Text>
-        <Text style={styles.subtitle}>Collaborate. Communicate. Conquer.</Text>
+        <Text style={styles.title}>Truth or Terrain</Text>
+        <Text style={styles.subtitle}>Is it the Truth........or is it the Terrain?</Text>
       </View>
 
       {/* ── LOG IN MODAL ── */}
