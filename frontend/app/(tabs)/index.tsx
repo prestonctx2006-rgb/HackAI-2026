@@ -57,7 +57,7 @@ export default function HomeScreen() {
 
   return (
     <ImageBackground
-      source={require('@/assets/images/Globe1.jpg')}
+      source={require('@/assets/images/MainBackground.png')}
       style={styles.background}
       resizeMode="cover"
     >
@@ -334,6 +334,11 @@ const styles = StyleSheet.create({
     fontWeight: '500',
   },
   navButton: {
-    padding: 20,
+    position: 'absolute',
+    bottom: 32,
+    left: 0,
+    right: 0,
+    paddingHorizontal: 20,
+    alignItems: 'center',
   },
 });
