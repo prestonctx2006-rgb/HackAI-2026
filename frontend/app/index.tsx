@@ -5,7 +5,6 @@ import {
   Text,
   TextInput,
   TouchableOpacity,
-  Button,
   ImageBackground,
   StatusBar,
   Modal,
@@ -92,7 +91,6 @@ export default function LandingScreen() {
       <StatusBar barStyle="light-content" />
       <View style={styles.overlay} />
 
-      {/* Top buttons */}
       <View style={styles.topBar}>
         <TouchableOpacity
           style={styles.outlineBtn}
@@ -110,7 +108,6 @@ export default function LandingScreen() {
         </TouchableOpacity>
       </View>
 
-      {/* Center branding */}
       <View style={styles.centerContent}>
         <Text style={styles.title}>Truth or Terrain</Text>
         <Text style={styles.subtitle}>Going beyond the surface</Text>
@@ -280,7 +277,6 @@ const styles = StyleSheet.create({
     textShadowColor: 'rgba(0,0,0,0.3)',
     textShadowOffset: { width: 0, height: 1 },
     textShadowRadius: 4,
-    textAlign: 'center'
   },
   modalBackdrop: {
     flex: 1,
@@ -333,8 +329,5 @@ const styles = StyleSheet.create({
     color: '#9CA3AF',
     fontSize: 14,
     fontWeight: '500',
-  },
-  navButton: {
-    padding: 20,
   },
 });

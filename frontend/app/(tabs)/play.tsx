@@ -15,35 +15,25 @@ import {
 } from 'react-native';
 import { useRouter } from 'expo-router';
 
-export default function HomeLoggedIn() {
+export default function PlayScreen() {
   const router = useRouter();
   const [joinModalVisible, setJoinModalVisible] = useState(false);
   const [roomCode, setRoomCode] = useState('');
   const [loading, setLoading] = useState(false);
 
-  // Generate a random 6-char room code
-  const generateRoomCode = (): string => {
-    const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
-    return Array.from({ length: 6 }, () =>
-      chars[Math.floor(Math.random() * chars.length)]
-    ).join('');
-  };
-
   const handleCreateRoom = async () => {
     setLoading(true);
     try {
-      const code = generateRoomCode();
-      const res = await fetch('http://localhost:8000/rooms/create', {
+      const res = await fetch('http://localhost:8000/create-room', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ roomCode: code }),
       });
       const data = await res.json();
       if (!res.ok) {
         Alert.alert('Error', data.detail);
         return;
       }
-      router.replace({ pathname: '/waiting-room', params: { code } });
+      router.replace({ pathname: '/waiting-room', params: { code: data.code } });
     } catch (e) {
       Alert.alert('Error', 'Could not connect to server.');
     } finally {
@@ -58,10 +48,9 @@ export default function HomeLoggedIn() {
     }
     setLoading(true);
     try {
-      const res = await fetch('http://localhost:8000/rooms/join', {
+      const res = await fetch(`http://localhost:8000/join-room/${roomCode.toUpperCase()}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ roomCode: roomCode.toUpperCase() }),
       });
       const data = await res.json();
       if (!res.ok) {
@@ -87,12 +76,10 @@ export default function HomeLoggedIn() {
       <StatusBar barStyle="light-content" />
       <View style={styles.overlay} />
 
-      {/* Center branding */}
       <View style={styles.centerContent}>
         <Text style={styles.title}>Truth or Terrain</Text>
         <Text style={styles.subtitle}>Going beyond the surface</Text>
 
-        {/* Room buttons */}
         <View style={styles.btnGroup}>
           <TouchableOpacity
             style={styles.primaryBtn}
@@ -230,8 +217,6 @@ const styles = StyleSheet.create({
     fontWeight: '800',
     fontSize: 17,
   },
-
-  // Modal
   modalBackdrop: {
     flex: 1,
     justifyContent: 'flex-end',
