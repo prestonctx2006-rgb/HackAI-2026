@@ -3,5 +3,6 @@ uvicorn
 firebase-admin
 python-dotenv
 requests
-google-generativeai
+groq
+httpx
 elevenlabs
