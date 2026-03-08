@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { BASE_URL } from '@/constants/api';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import {
   StyleSheet,
   View,
@@ -48,6 +49,8 @@ export default function LandingScreen() {
         Alert.alert('Error', data.detail);
         return;
       }
+      await AsyncStorage.setItem('uid', data.uid);
+      await AsyncStorage.setItem('username', data.username);
       closeModal();
       router.replace('/(tabs)/play');
     } catch (e) {
@@ -74,6 +77,8 @@ export default function LandingScreen() {
         Alert.alert('Error', data.detail);
         return;
       }
+      await AsyncStorage.setItem('uid', data.uid);
+      await AsyncStorage.setItem('username', data.username);
       closeModal();
       router.replace('/(tabs)/play');
     } catch (e) {

@@ -52,11 +52,19 @@ async def signup(body: SignupRequest):
 
        # Store password in Firestore (hackathon only!)
        db.collection("accounts").document(user.uid).set({
-           "id": user.uid,
-           "username": body.username,
-           "password": body.password,
-           "createdAt": datetime.datetime.utcnow().isoformat(),
-       })
+        "id": user.uid,
+        "username": body.username,
+        "password": body.password,
+        "createdAt": datetime.datetime.utcnow().isoformat(),
+        "stats": {
+            "games_played": 0,
+            "total_points": 0,
+            "avg_accuracy_km": 0,
+            "wins": 0,
+            "best_guess_km": None,
+            "current_streak": 0,
+        }
+    })
 
 
        return {

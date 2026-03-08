@@ -34,7 +34,7 @@ export default function PlayScreen() {
         Alert.alert('Error', data.detail);
         return;
       }
-      router.replace({ pathname: '/waiting-room', params: { code: data.code } });
+      router.replace({ pathname: '/waiting-room', params: { code: data.code, role: data.role } });
     } catch (e) {
       Alert.alert('Error', 'Could not connect to server.');
     } finally {
@@ -60,7 +60,7 @@ export default function PlayScreen() {
       }
       setJoinModalVisible(false);
       setRoomCode('');
-      router.replace({ pathname: '/waiting-room', params: { code: roomCode.toUpperCase() } });
+      router.replace({ pathname: '/waiting-room', params: { code: data.code, role: data.role } });
     } catch (e) {
       Alert.alert('Error', 'Could not connect to server.');
     } finally {
