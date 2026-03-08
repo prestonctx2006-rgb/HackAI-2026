@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { WebView } from 'react-native-webview';
 import {
   StyleSheet,
   View,
@@ -18,6 +19,8 @@ const HAS_MAP = true; // toggle to false if this player doesn't have the map thi
 export default function FactRoom() {
   const [mapVisible, setMapVisible] = useState(false);
   const [pinPlaced, setPinPlaced] = useState(false);
+  const [pin, setPin] = useState<{ latitude: number; longitude: number } | null>(null);
+
 
   return (
     <ImageBackground
@@ -64,16 +67,57 @@ export default function FactRoom() {
       <Modal visible={mapVisible} transparent animationType="slide">
         <View style={styles.mapBackdrop}>
           <View style={styles.mapCard}>
-            <Text style={styles.mapTitle}>Place Your Pin 📍</Text>
+            <Text style={styles.mapTitle}>Place Your Pin</Text>
             <Text style={styles.mapSubtitle}>
               Tap the location you think matches the clues
             </Text>
 
             {/* Map placeholder — replace with real map component */}
-            <View style={styles.mapPlaceholder}>
-              <Text style={styles.mapPlaceholderText}>🌍</Text>
-              <Text style={styles.mapPlaceholderSub}>Map goes here</Text>
-            </View>
+            <WebView
+              style={{ width: '100%', height: 220, borderRadius: 16, marginBottom: 20 }}
+              originWhitelist={['*']}
+              javaScriptEnabled={true}
+              domStorageEnabled={true}
+              source={{
+                html: `
+                  <!DOCTYPE html>
+                  <html>
+                  <head>
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+                    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+                    <style> 
+                      body, html, #map { 
+                        margin: 0; 
+                        padding: 0; 
+                        height: 100%; 
+                        width: 100%; 
+                      } 
+                    </style>
+                  </head>
+                  <body>
+                    <div id="map"></div>
+                    <script>
+                      var map = L.map('map').setView([20, 0], 2);
+                      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                        maxZoom: 19,
+                      }).addTo(map);
+                      var marker;
+                      map.on('click', function(e) {
+                        if (marker) map.removeLayer(marker);
+                        marker = L.marker(e.latlng).addTo(map);
+                        window.ReactNativeWebView.postMessage(JSON.stringify(e.latlng));
+                      });
+                    </script>
+                  </body>
+                  </html>
+                `
+              }}
+              onMessage={(e) => {
+                const coords = JSON.parse(e.nativeEvent.data);
+                setPin({ latitude: coords.lat, longitude: coords.lng });
+              }}
+            />
 
             <TouchableOpacity
               style={styles.confirmBtn}
@@ -188,6 +232,7 @@ const styles = StyleSheet.create({
     borderTopRightRadius: 28,
     padding: 28,
     paddingBottom: 44,
+    height: '80%',  // ← add this
   },
   mapTitle: {
     color: '#FFFFFF',
