@@ -1,3 +1,6 @@
+.env
+backend/venv/
+backend/__pycache__/
 backend/serviceAccountKey.json
 node_modules/
 .expo/
